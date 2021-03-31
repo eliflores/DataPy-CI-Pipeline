@@ -1,6 +1,7 @@
 import unittest
 import SimpleRestApp as app
 
+
 class TestHello(unittest.TestCase):
 
     def setUp(self):
@@ -23,8 +24,10 @@ class TestHello(unittest.TestCase):
         self.assertEqual(rv.status, '200 OK')
         self.assertIn(name, rv.data.decode())
 
+
 if __name__ == '__main__':
     import xmlrunner
+
     runner = xmlrunner.XMLTestRunner(output='test-reports')
     unittest.main(testRunner=runner)
     unittest.main()
