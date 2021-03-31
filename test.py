@@ -1,5 +1,5 @@
 import unittest
-import SimpleRest as app
+import SimpleRestApp as app
 
 class TestHello(unittest.TestCase):
 
